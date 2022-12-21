@@ -35,7 +35,6 @@ for item in date_items:
 	man_ranking_page.change_japan_row_background_color()
 	data = man_ranking_page.get_japan_data()
 	datas.append(data)
-	break
 
 datas.sort(key=lambda data: data[ManRankingPage.DATE_KEY])
 
