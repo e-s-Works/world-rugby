@@ -37,7 +37,7 @@ class OutputPageLocators(object):
 	DATA_YEAR = (By.ID, 'year')
 	DATA_TEAM = (By.ID, 'team')
 	
-	TABLE_HEADER      = (By.TAG_NAME, 'thead')
+	TABLE_HEADER = (By.TAG_NAME, 'thead')
 
 	__TABLE_BODY = '//tbody'
 	TABLE_BODY = (By.XPATH, __TABLE_BODY)
