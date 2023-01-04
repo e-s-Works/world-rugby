@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 class CookieSettingPageLocators(object):
-	REFUSE_COOKIE_BUTTON = (By.XPATH, '//*[text() = "全てのクッキーを拒否する"]')
+	REFUSE_COOKIE_BUTTON = (By.XPATH, '//*[string() = "全てのクッキーを拒否する"]')
 
 class ManRankingPageLocators(object):
 	__RANKING_TABLE_CONTAINER = '//*[@class="wr-table"][@data-sport-type="mru"]'
