@@ -1,5 +1,7 @@
 #! python3
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome          import ChromeDriverManager
 from page import CookieSettingPage
 from page import ManRankingPage
 from page import OutputPage
@@ -7,9 +9,10 @@ from page import OutputPage
 URL = r'https://www.world.rugby/tournaments/rankings/mru'
 
 datas = []
+service = ChromeService(ChromeDriverManager().install())
 options = webdriver.ChromeOptions()
 options.add_argument('start-maximized')
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(service=service, options=options)
 driver.get(URL)
 
 cookie_setting_page = CookieSettingPage(driver)
