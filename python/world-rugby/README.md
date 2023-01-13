@@ -16,6 +16,7 @@
 - Windows10
 - Python 3.11.0
   - selenium 4.7.2
+  - webdriver-manager  3.8.5
 
 ### 実行するアクション
 - クリック
