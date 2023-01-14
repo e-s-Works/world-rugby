@@ -9,7 +9,7 @@ from page import OutputPage
 URL = r'https://www.world.rugby/tournaments/rankings/mru'
 
 datas = []
-service = ChromeService(ChromeDriverManager().install())
+service = ChromeService( ChromeDriverManager().install() )
 options = webdriver.ChromeOptions()
 options.add_argument('start-maximized')
 driver = webdriver.Chrome(service=service, options=options)
